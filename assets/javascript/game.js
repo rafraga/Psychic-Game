@@ -24,7 +24,7 @@ $("#whichkey").on("keydown", function( event ) {
         letter_color = "red"
     };
     whichkey.value = "";
-    $("#random_key_display").html("<br><h3>version 0.01b</h3><h2>THE KEY I'M THINKING OF IS: <font color='" + letter_color + "'>" + random_key.toUpperCase() + "" + "</font></h2>");
+    $("#random_key_display").html("<br><h2>THE KEY I'M THINKING OF IS: <font color='" + letter_color + "'>" + random_key.toUpperCase() + "" + "</font></h2>");
     $("#log").html("You typed " + event.key.toUpperCase() + ", and the key I'm thinking of is "+ random_key.toUpperCase() + "! YOU <font color='" + letter_color + "'>" + won_var + "!</font>");
     $("#wins").html("<h5>Wins: " + wins_counter + "" + "</h5>");
     $("#loses").html("<h5>Loses: " + loses_counter + "" + "</h5>");
