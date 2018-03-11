@@ -33,7 +33,7 @@ $("#whichkey").on("keydown", function( event ) {
 
     if (guesses_sofar_counter == 10) {
         if (wins_counter == 0) {
-            $("#keys").html("<div style='color:red'><h5>GAME OVER! YOU LOST ALL 10 TRIES!<br><br>Click on RESTART to reset the game."); 
+            $("#keys").html("<div style='color:red'><h5>GAME OVER! YOU LOST ON ALL 10 TRIES!<br><br>Click on RESTART to reset the game."); 
         }
         if (wins_counter == 1) {
             $("#keys").html("<div style='color:red'><h5>GAME OVER! You won once, and lost 9 times.<br><br>Click on RESTART to reset the game."); 
