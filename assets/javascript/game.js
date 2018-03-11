@@ -32,7 +32,7 @@ $("#whichkey").on("keydown", function( event ) {
     $("#guesses_sofar").html("<h5>Your Guesses So Far: " + guesses_sofar_counter + "" + "</h5>");
 
     if (guesses_sofar_counter == 10) {
-        if (parseInt(wins_counter)) == parseInt(0)) {
+        if (parseInt(wins_counter) == parseInt(0)) {
             $("#keys").html("<div style='color:red'><h5>GAME OVER! YOU LOST ON ALL 10 TRIES!<br><br>Click on RESTART to reset the game."); 
         }
         if (parseInt(wins_counter) == parseInt(1)) {
