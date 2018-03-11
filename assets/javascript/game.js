@@ -25,7 +25,7 @@ $("#whichkey").on("keydown", function( event ) {
     };
     whichkey.value = "";
     $("#random_key_display").html("<h2>THE KEY I'M THINKING OF IS: <font color='" + letter_color + "'>" + random_key.toUpperCase() + "" + "</font></h2>");
-    $("#log").html("You typed " + event.key.toUpperCase() + ", and the key I'm thinking is "+ random_key.toUpperCase() + "! YOU <font color='" + letter_color + "'>" + won_var + "!</font>");
+    $("#log").html("You typed " + event.key.toUpperCase() + ", and the key I'm thinking of is "+ random_key.toUpperCase() + "! YOU <font color='" + letter_color + "'>" + won_var + "!</font>");
     $("#wins").html("<h5>Wins: " + wins_counter + "" + "</h5>");
     $("#loses").html("<h5>Loses: " + loses_counter + "" + "</h5>");
     $("#guesses_left").html("<h5>Guesses Left: " + guesses_left_counter + "" + "</h5>");
@@ -33,13 +33,13 @@ $("#whichkey").on("keydown", function( event ) {
 
     if (guesses_sofar_counter == 10) {
         if (wins_counter == 0) {
-            $("#keys").html("<div style='color:red'><h5>GAME OVER! YOU LOST ALL 10 TRIES!</h5></div><br>Refresh the page to restart!"); 
+            $("#keys").html("<div style='color:red'><h5>GAME OVER! YOU LOST ALL 10 TRIES!<br><br>Click on RESTART to reset the game."); 
         }
         if (wins_counter == 1) {
-            $("#keys").html("<div style='color:red'><h5>GAME OVER! You won once, and lost 10 times.<br>Refresh the page to restart!"); 
+            $("#keys").html("<div style='color:red'><h5>GAME OVER! You won once, and lost 9 times.<br><br>Click on RESTART to reset the game."); 
         }
         if (wins_counter < 1) {
-            $("#keys").html("<div style='color:red'><h5>GAME OVER! You won " + wins_counter + " times, and lost " + loses_counter + " times! <br><br>Click the RESTART button to reset the game."); 
+            $("#keys").html("<div style='color:red'><h5>GAME OVER! You won " + wins_counter + " times, and lost " + loses_counter + " times!<br><br>Click on RESTART to reset the game."); 
         }         
     }
   });
